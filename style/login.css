@@ -76,6 +76,14 @@
   width: 20%;
   text-align: end;
 }
+#toggle-password{
+   width: 20%;
+  text-align: end;
+}
+#toggle-password svg {
+  width: 100%;
+  text-align: end;
+}
 .forget-password {
   text-align: end;
   width: 80%;
