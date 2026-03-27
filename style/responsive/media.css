@@ -25,7 +25,9 @@
 }
 
 .hero-title {
-font-size: 50px;
+    font-size: 50px;
+    align-items: start;
+}
 }
 
 .hero-btns {
@@ -33,7 +35,7 @@ font-size: 50px;
     flex-direction: row;
     gap:15px;
 }
-}
+
 
 @media (min-width: 992px) {
     .navbar {
