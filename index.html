@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive/media.css">
     <title>Document</title>
   </head>
   <body>
@@ -44,9 +45,43 @@
             </a>
           </li>
         </ul>
-        <!-- تم اضافة رابط صفحة تسجيل الدخول في هذا السطر فقط -->
+        <div class="nav-actions">
+            <!-- Toggle Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle Menu">
+            <!-- open menu -->
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <!-- close menu -->
+          <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+            <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+          </svg>
+        </button>
+                <!-- تم اضافة رابط صفحة تسجيل الدخول في هذا السطر فقط -->
         <a href="./pages/login.html" class="btn-login"> LOGIN </a>
+        </div>
       </nav>
     </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            MORDERN 
+            <span class="hero-accent"> LEARNING 4.0 </span></h1>
+            <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                libero aspernatur commodi dicta, provident temporibus. 
+                Minus consectetur ab maxime porro.
+              </p>
+              <div class="hero-btns">
+                <a class="btn-white" href="#">Try now</a>
+                <a class="btn-yellow" href="#">Remind me</a>
+              </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
+  
