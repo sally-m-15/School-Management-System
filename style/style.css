@@ -138,9 +138,9 @@ a {
 }
 
 .hero-text {
-    width: 400px;
+    width: 330px;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-family: Poppins;
     line-height: 1.6;
     margin: 0  auto 30px;
@@ -148,9 +148,9 @@ a {
 
 .hero-btns {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
-    gap:15px;
+    gap:30px;
 }
 
 .hero-btns a {
