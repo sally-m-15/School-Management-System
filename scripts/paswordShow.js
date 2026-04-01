@@ -29,3 +29,26 @@ toggle_password.addEventListener('click', () => {
     toggle_password.innerHTML = iconShowPassword;
   }
 });
+
+
+
+
+// ==================================
+
+// read item error
+const itemError = document.getElementById('error-login');
+
+// password and username
+const correctUsername = 'admin';
+const correctPassword = '123456';
+function login(e) {
+  e.preventDefault();
+  // read value input
+  const textInput = document.getElementById('textInput').value;
+  const passwordInput = document.getElementById('passwordInput').value;
+  if (textInput === correctUsername && passwordInput === correctPassword) {
+    window.location.href = './dashboard/index.html';
+  } else {
+    itemError.innerHTML = 'the username or password is not true';
+  }
+}
