@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,9 +42,9 @@
         <h1 class="title">ADMIN</h1>
         <hr />
 
-        <form class="container-form">
+        <form class="container-form" onsubmit="login(event)">
           <div class="input-group">
-            <input type="text" name="" placeholder="Username" id="" />
+            <input type="text" name="text" placeholder="Username" id="textInput" />
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.6 8.8476V17.4C21.6 18.1957 21.2839 18.9587 20.7213 19.5213C20.1587 20.0839 19.3956 20.4 18.6 20.4H5.39999C4.60434 20.4 3.84128 20.0839 3.27867 19.5213C2.71606 18.9587 2.39999 18.1957 2.39999 17.4V8.8476L11.6952 14.3172C11.7875 14.3717 11.8928 14.4004 12 14.4004C12.1072 14.4004 12.2125 14.3717 12.3048 14.3172L21.6 8.8476ZM18.6 4.8C19.3382 4.79989 20.0505 5.07193 20.6006 5.56409C21.1508 6.05625 21.5002 6.73397 21.582 7.4676L12 13.104L2.41799 7.4676C2.49978 6.73397 2.84918 6.05625 3.39935 5.56409C3.94951 5.07193 4.66182 4.79989 5.39999 4.8H18.6Z"
@@ -53,11 +53,12 @@
           </div>
 
           <div class="input-group">
-            <input type="password" name="" placeholder="Password" id="password" />
+            <input type="password" name="password" placeholder="Password" id="passwordInput" />
             <span class="icon-title-login" id="toggle-password"> </span>
           </div>
+          <p id="error-login"></p>
           <p class="forget-password">Forgotten password?</p>
-          <button class="btn-login">Login</button>
+          <button type="submit" class="btn-login">Login</button>
         </form>
       </section>
     </div>
