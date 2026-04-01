@@ -23,21 +23,20 @@ sidebarLink.innerHTML = sidebarItems
   })
   .join("");
 
-const repoName = "/School-Management-System";
 const router = {
   "/": {
-    html: `${repoName}/pages/dashboard/dashboard.html`,
-    js: `${repoName}/scripts/dashboard/dashboard.js`,
-    css: `${repoName}/style/dashboard/dashboard.css`,
+    html: `pages/dashboard/dashboard.html`,
+    js: `scripts/dashboard/dashboard.js`,
+    css: `style/dashboard/dashboard.css`,
   },
-  "/student": { html: `${repoName}/pages/dashboard/student.html` },
-  "/staff": { html: `${repoName}/pages/dashboard/staff.html` },
-  "/academics": { html: `${repoName}/pages/dashboard/academics.html` },
-  "/performance": { html: `${repoName}/pages/dashboard/performance.html` },
-  "/collectFees": { html: `${repoName}/pages/dashboard/collectFees.html` },
-  "/announcement": { html: `${repoName}/pages/dashboard/announcement.html` },
-  "/setup": { html: `${repoName}/pages/dashboard/setup.html` },
-  "/changePassword": { html: `${repoName}/pages/dashboard/changePassword.html` },
+  "/student": { html: `pages/dashboard/student.html` },
+  "/staff": { html: `pages/dashboard/staff.html` },
+  "/academics": { html: `pages/dashboard/academics.html` },
+  "/performance": { html: `pages/dashboard/performance.html` },
+  "/collectFees": { html: `pages/dashboard/collectFees.html` },
+  "/announcement": { html: `pages/dashboard/announcement.html` },
+  "/setup": { html: `pages/dashboard/setup.html` },
+  "/changePassword": { html: `pages/dashboard/changePassword.html` },
 };
 
 const route = (event) => {
@@ -48,11 +47,6 @@ const route = (event) => {
 
 const handleLocation = async () => {
   const path = window.location.pathname;
-  // الاضافه الجديده عشان لو نجحت 
-  if (path.startsWith(repoName)) {
-    path = path.replace(repoName, "") || "/";
-  }
-  // نهايه الاضاف
   const route = router[path] || router["/"];
   const pageTitle =
     sidebarItems.find((item) => item.path === path)?.name || "Dashboard";
