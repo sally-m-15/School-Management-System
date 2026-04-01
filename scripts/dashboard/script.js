@@ -14,29 +14,29 @@ const sidebarItems = [
 
 sidebarLink.innerHTML = sidebarItems
   .map((item) => {
-    const fullPath = item.path === "/" ? repoName : `${repoName}${item.path}`;
-    return `
+return `
     <li>
-        <a class="nav-link" href="${fullPath}" onclick="route(event)">${item.name}</a>
+        <a class="nav-link" href="${item.path}" onclick="route(event)">${item.name}</a>
     </li>
     `;
   })
   .join("");
 
+const repoName = "/School-Management-System";
 const router = {
   "/": {
-    html: `pages/dashboard/dashboard.html`,
-    js: `scripts/dashboard/dashboard.js`,
-    css: `style/dashboard/dashboard.css`,
+    html: `${repoName}/pages/dashboard/dashboard.html`,
+    js: `${repoName}/scripts/dashboard/dashboard.js`,
+    css: `${repoName}/style/dashboard/dashboard.css`,
   },
-  "/student": { html: `pages/dashboard/student.html` },
-  "/staff": { html: `pages/dashboard/staff.html` },
-  "/academics": { html: `pages/dashboard/academics.html` },
-  "/performance": { html: `pages/dashboard/performance.html` },
-  "/collectFees": { html: `pages/dashboard/collectFees.html` },
-  "/announcement": { html: `pages/dashboard/announcement.html` },
-  "/setup": { html: `pages/dashboard/setup.html` },
-  "/changePassword": { html: `pages/dashboard/changePassword.html` },
+  "/student": { html: `${repoName}/pages/dashboard/student.html` },
+  "/staff": { html: `${repoName}/pages/dashboard/staff.html` },
+  "/academics": { html: `${repoName}/pages/dashboard/academics.html` },
+  "/performance": { html: `${repoName}/pages/dashboard/performance.html` },
+  "/collectFees": { html: `${repoName}/pages/dashboard/collectFees.html` },
+  "/announcement": { html: `${repoName}/pages/dashboard/announcement.html` },
+  "/setup": { html: `${repoName}/pages/dashboard/setup.html` },
+  "/changePassword": { html: `${repoName}/pages/dashboard/changePassword.html` },
 };
 
 const route = (event) => {
@@ -48,8 +48,7 @@ const route = (event) => {
 const handleLocation = async () => {
   const path = window.location.pathname;
   const route = router[path] || router["/"];
-  const pageTitle =
-    sidebarItems.find((item) => item.path === path)?.name || "Dashboard";
+  const pageTitle = sidebarItems.find((item) => item.path === path)?.name || "Dashboard";
   const displaySpan = document.getElementById("page-title-display");
 
   if (displaySpan) {
