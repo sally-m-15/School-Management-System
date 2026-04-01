@@ -24,18 +24,18 @@ return `
 
 const router = {
   "/": {
-    html: `/pages/dashboard/dashboard.html`,
-    js: `/scripts/dashboard/dashboard.js`,
-    css: `/style/dashboard/dashboard.css`,
+    html: `./pages/dashboard/dashboard.html`,
+    js: `./scripts/dashboard/dashboard.js`,
+    css: `./style/dashboard/dashboard.css`,
   },
-  "/student": { html: `/pages/dashboard/student.html` },
-  "/staff": { html: `/pages/dashboard/staff.html` },
-  "/academics": { html: `/pages/dashboard/academics.html` },
-  "/performance": { html: `/pages/dashboard/performance.html` },
-  "/collectFees": { html: `/pages/dashboard/collectFees.html` },
-  "/announcement": { html: `/pages/dashboard/announcement.html` },
-  "/setup": { html: `/pages/dashboard/setup.html` },
-  "/changePassword": { html: `/pages/dashboard/changePassword.html` },
+  "/student": { html: `./pages/dashboard/student.html` },
+  "/staff": { html: `./pages/dashboard/staff.html` },
+  "/academics": { html: `./pages/dashboard/academics.html` },
+  "/performance": { html: `./pages/dashboard/performance.html` },
+  "/collectFees": { html: `./pages/dashboard/collectFees.html` },
+  "/announcement": { html: `./pages/dashboard/announcement.html` },
+  "/setup": { html: `./pages/dashboard/setup.html` },
+  "/changePassword": { html: `./pages/dashboard/changePassword.html` },
 };
 
 
