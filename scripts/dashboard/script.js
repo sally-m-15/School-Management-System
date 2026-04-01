@@ -16,7 +16,7 @@ sidebarLink.innerHTML = sidebarItems
   .map((item) => {
 return `
     <li>
-        <a class="nav-link" href="${item.path}" onclick="route(event)">${item.name}</a>
+        <a class="nav-link" href="${item.path}">${item.name}</a>
     </li>
     `;
   })
@@ -38,25 +38,23 @@ const router = {
   "/changePassword": { html: `/pages/dashboard/changePassword.html` },
 };
 
-const route = (event) => {
-  event.preventDefault();
-  window.history.pushState({}, "", event.currentTarget.href);
-  handleLocation();
-};
 
 const handleLocation = async () => {
 const path = window.location.hash.replace("#", "") || "/";
   const route = router[path] || router["/"];
-  const pageTitle = sidebarItems.find((item) => item.path === path)?.name || "Dashboard";
+ const pageTitle =
+  sidebarItems.find((item) => item.path.replace("#", "") === path)?.name ||
+  "Dashboard";
   const displaySpan = document.getElementById("page-title-display");
 
   if (displaySpan) {
     displaySpan.innerText = pageTitle ? pageTitle : "Dashboard";
   }
 
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    link.classList.toggle("active", link.getAttribute("href") === path);
-  });
+document.querySelectorAll(".nav-link").forEach((link) => {
+  const linkPath = link.getAttribute("href").replace("#", "");
+  link.classList.toggle("active", linkPath === path);
+});
 
   try {
     let dynamicStyle = document.getElementById("dynamic-style");
@@ -83,5 +81,5 @@ const path = window.location.hash.replace("#", "") || "/";
   }
 };
 
-window.onpopstate = handleLocation;
+window.addEventListener("hashchange", handleLocation);
 handleLocation();
