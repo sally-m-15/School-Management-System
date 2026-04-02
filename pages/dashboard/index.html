@@ -1,66 +1,69 @@
-<!Doctype>
+<!Doctype >
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../style/dashboard/style.css">    
-<title>Dashboard</title>
-</head>
-<body>
-        <div class="main-layout">
-        <div class="container">
-            <div class="admin-logo">
-                <div class="logo">
-                    <h2>EDUTERIA</h2>
-                    <img src="../../img/icon-park-solid_fire.svg" alt="park-solid-fire">
-                </div>
-                <div class="img-logo">
-                    <img src="../../img/download 1.png" alt="admin">
-                    <h3>ADMIN</h3>
-                </div>
-            </div>
-        <aside class="sidebar">
-            <ul class="sidebar-link">
-                <li>
-                    <a href="/" onclick="route(event)"></a>
-                </li>
-            </ul>
-        </aside>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../../style/dashboard/style.css" />
+    <!-- <link rel="stylesheet" href="/style/dashboard/style.css" /> -->
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="main-layout">
+      <aside class="sidebar">
+        <div class="admin-logo">
+          <div class="logo">
+            <h2>EDUTERIA</h2>
+            <img src="../../img/icon-park-solid_fire.svg" alt="park-solid-fire" />
+          </div>
+          <div class="img-logo">
+            <img src="../../img/download 1.png" alt="admin" />
+            <h3>ADMIN</h3>
+          </div>
         </div>
-            <div>
-                <header>
-            <nav class="dashboard-navbar">
-                <div class="search-box">
-                    <img src="../../img/heroicons_magnifying-glass-20-solid.svg" alt="magnifying">
-                    <input class="search-input" type="search" placeholder="Search...">
-                </div>
-                <div class="nav-actions">
-                    <div class="notification-icon">
-                        <img src="../../img/clarity_notification-outline-badged (1).svg" alt="notification">
-                    </div>
-                    <div class="user-profile">
-                        <img class="user-img" src="../../img/Ellipse 1.png" alt="IbukunOluwa">
-                        <span class="user-name">IbukunOluwa
-                            <img src="../../img/Vector 1.svg" alt="arrow-down">
-                        </span>
-                    </div>
-                </div>
-            </nav>
-            </header>
-            <section class="dashboard-header">
-                <div class="page-home">
-                    <h4 class="page-title">Home</h4>
-                    <span class="breadcrumb-wrapper">
-                        <img src="../../img/ic_outline-greater-than.svg" alt="outline-greater">
-                        <span id="page-title-display"> Dashboard </span>
-                    </span>
-                </div>
-            </section>
-                <main class="main-pages">
-            </main>
+        <ul class="sidebar-link">
+          <li>
+            <a href="/" onclick="route(event)"></a>
+          </li>
+        </ul>
+      </aside>
+      <div class="container-content-page">
+        <header>
+          <nav class="dashboard-navbar">
+            <div class="search-box">
+              <img src="../../img/heroicons_magnifying-glass-20-solid.svg" alt="magnifying" />
+              <input class="search-input" type="search" placeholder="Search..." />
             </div>
-        </div>
-<script src="../../scripts/dashboard/script.js" ></script>
-</body>
+            <div class="nav-actions">
+              <div class="notification-icon">
+                <img src="../../img/clarity_notification-outline-badged (1).svg" alt="notification" />
+              </div>
+              <div class="user-profile">
+                <img class="user-img" src="../../img/Ellipse 1.png" alt="IbukunOluwa" />
+                <span class="user-name"
+                  >IbukunOluwa
+                  <img src="../../img/Vector 1.svg" alt="arrow-down" />
+                </span>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="dashboard-header">
+          <div class="page-home">
+            <h4 class="page-title">Home</h4>
+            <span class="breadcrumb-wrapper">
+              <img src="../../img/ic_outline-greater-than.svg" alt="outline-greater" />
+              <span id="page-title-display"> Dashboard </span>
+            </span>
+          </div>
+        </section>
+        
+        <main class="main-pages"></main>
+      </div>
+    </div>
+
+    <script src="../../scripts/dashboard/script.js"></script>
+  </body>
 </html>

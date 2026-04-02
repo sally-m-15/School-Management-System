@@ -1,23 +1,35 @@
 const sidebarLink = document.querySelector(".sidebar-link");
 
 const sidebarItems = [
-  { path: "#/", name: "Dashboard" },
-  { path: "#/student", name: "Student" },
-  { path: "#/staff", name: "Staff" },
-  { path: "#/academics", name: "Academics" },
-  { path: "#/performance", name: "Performance" },
-  { path: "#/collectFees", name: "Collect Fees" },
-  { path: "#/announcement", name: "Announcement" },
-  { path: "#/setup", name: "Setup" },
-  { path: "#/changePassword", name: "Change password" },
+  { path: '#/', name: 'Dashboard', pathIcon: '../../img/sidebaricon/dashbord.svg' },
+  { path: '#/student', name: 'Student', pathIcon: '../../img/sidebaricon/students-couple-svgrepo-com.svg' },
+  { path: '#/staff', name: 'Staff', pathIcon: '../../img/sidebaricon/staff-svgrepo-com.svg' },
+  { path: '#/academics', name: 'Academics', pathIcon: '../../img/sidebaricon/academy-2.svg' },
+  {
+    path: '#/performance',
+    name: 'Performance',
+    pathIcon: '../../img/sidebaricon/performance-increase-svgrepo-com.svg',
+  },
+  {
+    path: '#/collectFees',
+    name: 'Collect Fees',
+    pathIcon: '../../img/sidebaricon/payment.svg',
+  },
+  { path: '#/announcement', name: 'Announcement', pathIcon: '../../img/sidebaricon/Announcement.svg' },
+  { path: '#/setup', name: 'Setup', pathIcon: '../../img/sidebaricon/setup.svg' },
+  { path: '#/changePassword', name: 'Change password', pathIcon: '../../img/sidebaricon/change-password-2.svg' },
 ];
+
 
 if (sidebarLink) {
   sidebarLink.innerHTML = sidebarItems
     .map((item) => {
       return `
       <li>
-          <a class="nav-link" href="${item.path}">${item.name}</a>
+          <a class="nav-link" href="${item.path}">
+          <img class="iconSidebar" src=${item.pathIcon} alt=${item.name}/>
+        <span>${item.name}</span>
+          </a>
       </li>
       `;
     })
