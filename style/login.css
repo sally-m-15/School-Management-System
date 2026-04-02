@@ -19,7 +19,7 @@
   padding: 0;
   margin: 0;
   width: 450px;
-  height: 500px;
+  /* height: 500px; */
   background: #ffffff;
   text-align: center;
 }
@@ -39,7 +39,9 @@
   color: #ffffff;
   width: 48px;
   height: 48px;
+  cursor: pointer;
 }
+
 .title {
   font-size: 30px;
   text-transform: uppercase;
@@ -100,6 +102,7 @@
   text-transform: uppercase;
   font-size: 26px;
   box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 .btn-login:hover {
   background-color: #ffc940;
@@ -168,4 +171,10 @@
   height: 45px;
   font-size: 20px;
 }
+}
+
+#error-login{
+  padding-top: 10px;
+  color: red;
+  font-size: 18px;
 }

@@ -11,13 +11,13 @@ const iconShowPassword = `<svg
               <path
                 d="M15.2119 21.3841C19.8144 21.1321 24.2415 18.3877 27.8466 13.4335C27.9221 13.3297 27.9643 13.2224 27.9643 13.0947C27.9643 12.973 27.928 12.8714 27.8562 12.7724C26.4707 10.8653 24.9633 9.28496 23.3711 8.04752L22.2741 9.84073C23.1883 10.5737 24.0836 11.4461 24.9497 12.4623C25.2615 12.8281 25.2615 13.3612 24.9497 13.727C22.3379 16.7916 19.4614 18.5487 16.5977 19.1189L15.2119 21.3841Z"
                 fill="#B4B4B4" /> </svg>`;
-const iconHiddenPassword = `<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+const iconHiddenPassword = `
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M1 12C1 12 5 20 12 20C19 20 23 12 23 12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="12" cy="12" r="3" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
-const password = document.getElementById('password');
+const password = document.getElementById('passwordInput');
 const toggle_password = document.getElementById('toggle-password');
 toggle_password.innerHTML = iconShowPassword;
 toggle_password.addEventListener('click', () => {
