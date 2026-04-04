@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background-color: var(--background-color);
+  --background-color: #f4f4f4;
 }
 
 .main-layout {
@@ -276,14 +276,14 @@ ul li a {
 }
 .iconSidebar {
   width: 40px;
-  height: 100%;
+  height: 40px;
   padding-right: 10px;
   object-fit: contain;
   /* color: #ffb800; */
 }
 .iconSidebar.iconSidebar-close{
-  width: 50px;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   padding-right: 2px;
 }
 
@@ -295,7 +295,7 @@ ul li a {
 }
 .icon-show-sidebar {
   width: 40px;
-  height: 100%;
+  height: 40px;
   cursor: pointer;
 }
 .icon-show-sidebar.icon-show-sidebar-close {
